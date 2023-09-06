@@ -1,0 +1,13 @@
+server:
+  port: 7082
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: litecase-eureka-client
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7081/eureka

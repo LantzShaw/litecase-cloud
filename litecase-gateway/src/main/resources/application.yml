@@ -1,0 +1,18 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      routes:
+        - id: spring-cloud-eureka-client
+          uri: http://localhost:7082
+          predicates:
+            - Path=/red/{segment},/blue/{segment},/hello/{segment},/order/{segment}
+  main:
+    web-application-type: reactive
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7081/eureka
