@@ -3,6 +3,22 @@
 
 ### Record
 
+**spring cloud**
+
+```shell
+服务注册中心 server
+服务提供者 client
+服务调用 feign
+服务网关 gateway zuul
+服务配置中心 config
+服务熔断
+```
+
+**spring cloud config 多环境配置**
+```text
+https://juejin.cn/post/6997031315425984548
+```
+
 **gson报错，slf4j依赖报错 需要引入spring-boot-starter-parent以及spring-boot-starter-web**
 
 ```shell
